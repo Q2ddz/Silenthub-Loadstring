@@ -1,0 +1,1722 @@
+-- Silenthub aka. Silentware
+
+local SilentwareGui = Instance.new(ScreenGui)
+local Main = Instance.new(Frame)
+local UICorner = Instance.new(UICorner)
+local Tip = Instance.new(TextLabel)
+local TextLabel = Instance.new(TextLabel)
+local UIAspectRatioConstraint = Instance.new(UIAspectRatioConstraint)
+local UserImage = Instance.new(ImageLabel)
+local UICorner_2 = Instance.new(UICorner)
+local UserName = Instance.new(TextLabel)
+local FeelGoodPhrase = Instance.new(TextLabel)
+local NagivationBar = Instance.new(Frame)
+local UICorner_3 = Instance.new(UICorner)
+local keyboard = Instance.new(ImageButton)
+local settings = Instance.new(ImageButton)
+local home = Instance.new(ImageButton)
+local shopping_basket = Instance.new(ImageButton)
+local add_circle_outline = Instance.new(ImageButton)
+local compare = Instance.new(ImageButton)
+local Executor = Instance.new(Frame)
+local UICorner_4 = Instance.new(UICorner)
+local CodeBar = Instance.new(TextBox)
+local UICorner_5 = Instance.new(UICorner)
+local ExecuteButton = Instance.new(TextButton)
+local UICorner_6 = Instance.new(UICorner)
+local ExecutorName = Instance.new(TextLabel)
+local TextLabel_2 = Instance.new(TextLabel)
+local ScrollingFrame = Instance.new(ScrollingFrame)
+local Frame = Instance.new(Frame)
+local UICorner_7 = Instance.new(UICorner)
+local Settings = Instance.new(Frame)
+local UICorner_8 = Instance.new(UICorner)
+local VisbilityKeyFrame = Instance.new(Frame)
+local UICorner_9 = Instance.new(UICorner)
+local InputKey = Instance.new(TextBox)
+local UICorner_10 = Instance.new(UICorner)
+local VisibilityButtonText = Instance.new(TextLabel)
+local AimbotKeyFrame = Instance.new(Frame)
+local UICorner_11 = Instance.new(UICorner)
+local InputKey_2 = Instance.new(TextBox)
+local UICorner_12 = Instance.new(UICorner)
+local AimbotButtonText = Instance.new(TextLabel)
+local ESPKeyFrame = Instance.new(Frame)
+local UICorner_13 = Instance.new(UICorner)
+local ESPButtonText = Instance.new(TextLabel)
+local InputKey_3 = Instance.new(TextBox)
+local UICorner_14 = Instance.new(UICorner)
+local AdditionalSettings = Instance.new(Frame)
+local UICorner_15 = Instance.new(UICorner)
+local AimbotFrame = Instance.new(Frame)
+local UICorner_16 = Instance.new(UICorner)
+local AimbotText = Instance.new(TextLabel)
+local AimbotButton = Instance.new(TextButton)
+local UICorner_17 = Instance.new(UICorner)
+local AimbotSmoothnessFrame = Instance.new(Frame)
+local UICorner_18 = Instance.new(UICorner)
+local AimbotSmoothnessText = Instance.new(TextLabel)
+local AimbotSmoothnessValue = Instance.new(TextBox)
+local UICorner_19 = Instance.new(UICorner)
+local AimbotRangeFrame = Instance.new(Frame)
+local UICorner_20 = Instance.new(UICorner)
+local AimbotRangeText = Instance.new(TextLabel)
+local AimbotRangeValue = Instance.new(TextBox)
+local UICorner_21 = Instance.new(UICorner)
+local AimbotBulletDropFrame = Instance.new(Frame)
+local UICorner_22 = Instance.new(UICorner)
+local AimbotBulletDropText = Instance.new(TextLabel)
+local AimbotBulletDropValue = Instance.new(TextBox)
+local UICorner_23 = Instance.new(UICorner)
+local ESPFrame = Instance.new(Frame)
+local ESPText = Instance.new(TextLabel)
+local ESPButton = Instance.new(TextButton)
+local UICorner_24 = Instance.new(UICorner)
+local UICorner_25 = Instance.new(UICorner)
+local AimPartFrame = Instance.new(Frame)
+local UICorner_26 = Instance.new(UICorner)
+local AimbotAimPartText = Instance.new(TextLabel)
+local AimbotAimPartChoices = Instance.new(Frame)
+local UICorner_27 = Instance.new(UICorner)
+local AimPartChoice = Instance.new(TextButton)
+local UICorner_28 = Instance.new(UICorner)
+local AimPartHead = Instance.new(TextButton)
+local UICorner_29 = Instance.new(UICorner)
+local AimPartHead_2 = Instance.new(TextButton)
+local UICorner_30 = Instance.new(UICorner)
+local ESPTracersFrame = Instance.new(Frame)
+local ESPTracersText = Instance.new(TextLabel)
+local ESPTracersButton = Instance.new(TextButton)
+local UICorner_31 = Instance.new(UICorner)
+local UICorner_32 = Instance.new(UICorner)
+local ESPChamsFrame = Instance.new(Frame)
+local ESPChamsText = Instance.new(TextLabel)
+local ESPChamsButton = Instance.new(TextButton)
+local UICorner_33 = Instance.new(UICorner)
+local UICorner_34 = Instance.new(UICorner)
+local PurchaseFrame = Instance.new(Frame)
+local UICorner_35 = Instance.new(UICorner)
+local TextButton = Instance.new(TextButton)
+local UICorner_36 = Instance.new(UICorner)
+local UITextSizeConstraint = Instance.new(UITextSizeConstraint)
+local TextLabel_3 = Instance.new(TextLabel)
+local TextBox = Instance.new(TextBox)
+local TextLabel_4 = Instance.new(TextLabel)
+local ThemeFrame = Instance.new(Frame)
+local UICorner_37 = Instance.new(UICorner)
+local Frame_2 = Instance.new(Frame)
+local UICorner_38 = Instance.new(UICorner)
+local TextLabel_5 = Instance.new(TextLabel)
+local TextLabel_6 = Instance.new(TextLabel)
+local TextButton_2 = Instance.new(TextButton)
+local UICorner_39 = Instance.new(UICorner)
+
+--Properties
+
+SilentwareGui.Name = SilentwareGui
+SilentwareGui.Parent = game.Players.LocalPlayerWaitForChild(PlayerGui)
+SilentwareGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = Main
+Main.Parent = SilentwareGui
+Main.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Main.Position = UDim2.new(0.0249823127, 0, 0.118032664, 0)
+Main.Size = UDim2.new(0.94841814, 0, 0.762880445, 0)
+Main.ZIndex = 0
+
+UICorner.Parent = Main
+
+Tip.Name = Tip
+Tip.Parent = Main
+Tip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tip.BackgroundTransparency = 1.000
+Tip.Position = UDim2.new(0.211890832, 0, 0.383660674, 0)
+Tip.Size = UDim2.new(0.57619375, 0, 0.227972269, 0)
+Tip.Font = Enum.Font.Gotham
+Tip.Text = Please choose a button on our navigation bar on the left.
+Tip.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tip.TextScaled = true
+Tip.TextSize = 14.000
+Tip.TextWrapped = true
+
+TextLabel.Parent = Main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.27699098, 0, 0.836143553, 0)
+TextLabel.Size = UDim2.new(0.515368581, 0, 0.0987684801, 0)
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = Welcome to [silenthub] (partnered with q1ddz)
+TextLabel.TextColor3 = Color3.fromRGB(170, 85, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextTransparency = 0.500
+TextLabel.TextWrapped = true
+
+UIAspectRatioConstraint.Parent = TextLabel
+UIAspectRatioConstraint.AspectRatio = 12.300
+
+UserImage.Name = UserImage
+UserImage.Parent = Main
+UserImage.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+UserImage.Position = UDim2.new(0.0916646644, 0, 0.0364529155, 0)
+UserImage.Size = UDim2.new(0.0965070352, 0, 0.252696961, 0)
+
+UICorner_2.Parent = UserImage
+
+UserName.Name = UserName
+UserName.Parent = Main
+UserName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UserName.BackgroundTransparency = 1.000
+UserName.Position = UDim2.new(0.196960494, 0, 0.0474684574, 0)
+UserName.Size = UDim2.new(0.227624997, 0, 0.0889647901, 0)
+UserName.Font = Enum.Font.Gotham
+UserName.Text = Hello, Script User
+UserName.TextColor3 = Color3.fromRGB(255, 255, 255)
+UserName.TextScaled = true
+UserName.TextSize = 14.000
+UserName.TextWrapped = true
+UserName.TextXAlignment = Enum.TextXAlignment.Left
+
+FeelGoodPhrase.Name = FeelGoodPhrase
+FeelGoodPhrase.Parent = Main
+FeelGoodPhrase.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeelGoodPhrase.BackgroundTransparency = 1.000
+FeelGoodPhrase.Position = UDim2.new(0.196960479, 0, 0.147862762, 0)
+FeelGoodPhrase.Size = UDim2.new(0.287774593, 0, 0.0472625419, 0)
+FeelGoodPhrase.Font = Enum.Font.Gotham
+FeelGoodPhrase.Text = Are you enjoying this game
+FeelGoodPhrase.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeelGoodPhrase.TextScaled = true
+FeelGoodPhrase.TextSize = 14.000
+FeelGoodPhrase.TextTransparency = 0.500
+FeelGoodPhrase.TextWrapped = true
+FeelGoodPhrase.TextXAlignment = Enum.TextXAlignment.Left
+
+NagivationBar.Name = NagivationBar
+NagivationBar.Parent = SilentwareGui
+NagivationBar.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+NagivationBar.Position = UDim2.new(0.0397422835, 0, 0.14788264, 0)
+NagivationBar.Size = UDim2.new(0.0573376007, 0, 0.700887382, 0)
+NagivationBar.ZIndex = 999999999
+
+UICorner_3.Parent = NagivationBar
+
+keyboard.Name = keyboard
+keyboard.Parent = NagivationBar
+keyboard.BackgroundTransparency = 1.000
+keyboard.LayoutOrder = 2
+keyboard.Position = UDim2.new(0.190493077, 0, 0.539027989, 0)
+keyboard.Size = UDim2.new(0.631850004, 0, 0.10091763, 0)
+keyboard.ZIndex = 999999999
+keyboard.Image = rbxassetid3926305904
+keyboard.ImageRectOffset = Vector2.new(724, 444)
+keyboard.ImageRectSize = Vector2.new(36, 36)
+
+settings.Name = settings
+settings.Parent = NagivationBar
+settings.BackgroundTransparency = 1.000
+settings.LayoutOrder = 2
+settings.Position = UDim2.new(0.189999968, 0, 0.413963377, 0)
+settings.Size = UDim2.new(0.632343352, 0, 0.101685554, 0)
+settings.ZIndex = 999999999
+settings.Image = rbxassetid3926307971
+settings.ImageRectOffset = Vector2.new(324, 124)
+settings.ImageRectSize = Vector2.new(36, 36)
+
+home.Name = home
+home.Parent = NagivationBar
+home.BackgroundTransparency = 1.000
+home.Position = UDim2.new(0.204633072, 0, 0.0060606082, 0)
+home.Size = UDim2.new(0.616535485, 0, 0.0998512283, 0)
+home.ZIndex = 999999999
+home.Image = rbxassetid3926305904
+home.ImageRectOffset = Vector2.new(964, 204)
+home.ImageRectSize = Vector2.new(36, 36)
+
+shopping_basket.Name = shopping_basket
+shopping_basket.Parent = NagivationBar
+shopping_basket.BackgroundTransparency = 1.000
+shopping_basket.LayoutOrder = 11
+shopping_basket.Position = UDim2.new(0.189999953, 0, 0.271363705, 0)
+shopping_basket.Size = UDim2.new(0.630554497, 0, 0.107785106, 0)
+shopping_basket.ZIndex = 999999999
+shopping_basket.Image = rbxassetid3926307971
+shopping_basket.ImageRectOffset = Vector2.new(924, 204)
+shopping_basket.ImageRectSize = Vector2.new(36, 36)
+
+add_circle_outline.Name = add_circle_outline
+add_circle_outline.Parent = NagivationBar
+add_circle_outline.BackgroundTransparency = 1.000
+add_circle_outline.LayoutOrder = 18
+add_circle_outline.Position = UDim2.new(0.192516088, 0, 0.147514179, 0)
+add_circle_outline.Size = UDim2.new(0.61287266, 0, 0.100000001, 0)
+add_circle_outline.ZIndex = 999999999
+add_circle_outline.Image = rbxassetid3926307971
+add_circle_outline.ImageRectOffset = Vector2.new(764, 164)
+add_circle_outline.ImageRectSize = Vector2.new(36, 36)
+
+compare.Name = compare
+compare.Parent = NagivationBar
+compare.BackgroundTransparency = 1.000
+compare.LayoutOrder = 3
+compare.Position = UDim2.new(0.204633132, 0, 0.660328031, 0)
+compare.Size = UDim2.new(0.617710054, 0, 0.0992384553, 0)
+compare.ZIndex = 2
+compare.Image = rbxassetid3926305904
+compare.ImageRectOffset = Vector2.new(764, 924)
+compare.ImageRectSize = Vector2.new(36, 36)
+
+Executor.Name = Executor
+Executor.Parent = SilentwareGui
+Executor.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Executor.Position = UDim2.new(0.0249823127, 0, 0.118032664, 0)
+Executor.Size = UDim2.new(0.94841814, 0, 0.762880445, 0)
+Executor.Visible = false
+
+UICorner_4.Parent = Executor
+
+CodeBar.Name = CodeBar
+CodeBar.Parent = Executor
+CodeBar.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+CodeBar.Position = UDim2.new(0.107751086, 0, 0.15670222, 0)
+CodeBar.Size = UDim2.new(0.684883654, 0, 0.653696477, 0)
+CodeBar.ClearTextOnFocus = false
+CodeBar.Font = Enum.Font.Gotham
+CodeBar.PlaceholderColor3 = Color3.fromRGB(65, 32, 98)
+CodeBar.PlaceholderText = Enter your code here.
+CodeBar.Text = 
+CodeBar.TextColor3 = Color3.fromRGB(170, 85, 255)
+CodeBar.TextSize = 14.000
+CodeBar.TextWrapped = true
+CodeBar.TextXAlignment = Enum.TextXAlignment.Left
+CodeBar.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_5.Parent = CodeBar
+
+ExecuteButton.Name = ExecuteButton
+ExecuteButton.Parent = Executor
+ExecuteButton.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+ExecuteButton.Position = UDim2.new(0.107228994, 0, 0.861038864, 0)
+ExecuteButton.Size = UDim2.new(0.181818187, 0, 0.0972762629, 0)
+ExecuteButton.Modal = true
+ExecuteButton.Font = Enum.Font.Gotham
+ExecuteButton.Text = Execute
+ExecuteButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ExecuteButton.TextSize = 25.000
+ExecuteButton.TextWrapped = true
+
+UICorner_6.Parent = ExecuteButton
+
+ExecutorName.Name = ExecutorName
+ExecutorName.Parent = Executor
+ExecutorName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ExecutorName.BackgroundTransparency = 1.000
+ExecutorName.Position = UDim2.new(0.107228994, 0, 0.0400272012, 0)
+ExecutorName.Size = UDim2.new(0.25272727, 0, 0.0972762629, 0)
+ExecutorName.Font = Enum.Font.Gotham
+ExecutorName.Text = [silentware]
+ExecutorName.TextColor3 = Color3.fromRGB(170, 85, 255)
+ExecutorName.TextScaled = true
+ExecutorName.TextSize = 14.000
+ExecutorName.TextWrapped = true
+ExecutorName.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_2.Parent = Executor
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.320942432, 0, 0.0567080751, 0)
+TextLabel_2.Size = UDim2.new(0.216356933, 0, 0.0639144704, 0)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = partnered with q1ddz
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextTransparency = 0.600
+TextLabel_2.TextWrapped = true
+
+ScrollingFrame.Parent = Executor
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.820982099, 0, 0.156230822, 0)
+ScrollingFrame.Size = UDim2.new(0.162570715, 0, 0.654167652, 0)
+ScrollingFrame.ZIndex = 2
+
+Frame.Parent = Executor
+Frame.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+Frame.Position = UDim2.new(0.820982099, 0, 0.156230822, 0)
+Frame.Size = UDim2.new(0.162570715, 0, 0.654167652, 0)
+
+UICorner_7.Parent = Frame
+
+Settings.Name = Settings
+Settings.Parent = SilentwareGui
+Settings.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+Settings.Position = UDim2.new(0.0249823127, 0, 0.118032664, 0)
+Settings.Size = UDim2.new(0.94841814, 0, 0.762880445, 0)
+Settings.Visible = false
+
+UICorner_8.Parent = Settings
+
+VisbilityKeyFrame.Name = VisbilityKeyFrame
+VisbilityKeyFrame.Parent = Settings
+VisbilityKeyFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+VisbilityKeyFrame.Position = UDim2.new(0.0990699455, 0, 0.0391280316, 0)
+VisbilityKeyFrame.Size = UDim2.new(0, 251, 0, 35)
+
+UICorner_9.Parent = VisbilityKeyFrame
+
+InputKey.Name = InputKey
+InputKey.Parent = VisbilityKeyFrame
+InputKey.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+InputKey.Position = UDim2.new(0.764940262, 0, 0.0857142881, 0)
+InputKey.Size = UDim2.new(0, 51, 0, 29)
+InputKey.ClearTextOnFocus = false
+InputKey.Font = Enum.Font.Gotham
+InputKey.Text = Backspace
+InputKey.TextColor3 = Color3.fromRGB(255, 255, 255)
+InputKey.TextScaled = true
+InputKey.TextSize = 14.000
+InputKey.TextWrapped = true
+
+UICorner_10.Parent = InputKey
+
+VisibilityButtonText.Name = VisibilityButtonText
+VisibilityButtonText.Parent = VisbilityKeyFrame
+VisibilityButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityButtonText.BackgroundTransparency = 1.000
+VisibilityButtonText.Position = UDim2.new(0, 0, 0.171428576, 0)
+VisibilityButtonText.Size = UDim2.new(0, 174, 0, 23)
+VisibilityButtonText.Font = Enum.Font.Gotham
+VisibilityButtonText.Text = Change UI Visibility Key
+VisibilityButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisibilityButtonText.TextScaled = true
+VisibilityButtonText.TextSize = 14.000
+VisibilityButtonText.TextWrapped = true
+
+AimbotKeyFrame.Name = AimbotKeyFrame
+AimbotKeyFrame.Parent = Settings
+AimbotKeyFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimbotKeyFrame.Position = UDim2.new(0.0990699455, 0, 0.144773722, 0)
+AimbotKeyFrame.Size = UDim2.new(0, 251, 0, 35)
+
+UICorner_11.Parent = AimbotKeyFrame
+
+InputKey_2.Name = InputKey
+InputKey_2.Parent = AimbotKeyFrame
+InputKey_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+InputKey_2.Position = UDim2.new(0.764940262, 0, 0.0857142881, 0)
+InputKey_2.Size = UDim2.new(0, 51, 0, 29)
+InputKey_2.ClearTextOnFocus = false
+InputKey_2.Font = Enum.Font.Gotham
+InputKey_2.Text = Q
+InputKey_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+InputKey_2.TextScaled = true
+InputKey_2.TextSize = 14.000
+InputKey_2.TextWrapped = true
+
+UICorner_12.Parent = InputKey_2
+
+AimbotButtonText.Name = AimbotButtonText
+AimbotButtonText.Parent = AimbotKeyFrame
+AimbotButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButtonText.BackgroundTransparency = 1.000
+AimbotButtonText.Position = UDim2.new(0, 0, 0.171428576, 0)
+AimbotButtonText.Size = UDim2.new(0, 174, 0, 23)
+AimbotButtonText.Font = Enum.Font.Gotham
+AimbotButtonText.Text = Change Aimbot Key
+AimbotButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButtonText.TextScaled = true
+AimbotButtonText.TextSize = 14.000
+AimbotButtonText.TextWrapped = true
+
+ESPKeyFrame.Name = ESPKeyFrame
+ESPKeyFrame.Parent = Settings
+ESPKeyFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ESPKeyFrame.Position = UDim2.new(0.0990699455, 0, 0.250419408, 0)
+ESPKeyFrame.Size = UDim2.new(0, 251, 0, 35)
+
+UICorner_13.Parent = ESPKeyFrame
+
+ESPButtonText.Name = ESPButtonText
+ESPButtonText.Parent = ESPKeyFrame
+ESPButtonText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPButtonText.BackgroundTransparency = 1.000
+ESPButtonText.Position = UDim2.new(0, 0, 0.171428576, 0)
+ESPButtonText.Size = UDim2.new(0, 174, 0, 23)
+ESPButtonText.Font = Enum.Font.Gotham
+ESPButtonText.Text = Change ESP Key
+ESPButtonText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPButtonText.TextScaled = true
+ESPButtonText.TextSize = 14.000
+ESPButtonText.TextWrapped = true
+
+InputKey_3.Name = InputKey
+InputKey_3.Parent = ESPKeyFrame
+InputKey_3.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+InputKey_3.Position = UDim2.new(0.764940262, 0, 0.0857142881, 0)
+InputKey_3.Size = UDim2.new(0, 51, 0, 29)
+InputKey_3.ClearTextOnFocus = false
+InputKey_3.Font = Enum.Font.Gotham
+InputKey_3.Text = V
+InputKey_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+InputKey_3.TextScaled = true
+InputKey_3.TextSize = 14.000
+InputKey_3.TextWrapped = true
+
+UICorner_14.Parent = InputKey_3
+
+AdditionalSettings.Name = AdditionalSettings
+AdditionalSettings.Parent = SilentwareGui
+AdditionalSettings.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+AdditionalSettings.Position = UDim2.new(0.0249823127, 0, 0.118032664, 0)
+AdditionalSettings.Size = UDim2.new(0.94841814, 0, 0.762880445, 0)
+AdditionalSettings.Visible = false
+
+UICorner_15.Parent = AdditionalSettings
+
+AimbotFrame.Name = AimbotFrame
+AimbotFrame.Parent = AdditionalSettings
+AimbotFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimbotFrame.Position = UDim2.new(0.0990699455, 0, 0.0391280092, 0)
+AimbotFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+UICorner_16.Parent = AimbotFrame
+
+AimbotText.Name = AimbotText
+AimbotText.Parent = AimbotFrame
+AimbotText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotText.BackgroundTransparency = 1.000
+AimbotText.Position = UDim2.new(0, 0, 0.171428576, 0)
+AimbotText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+AimbotText.Font = Enum.Font.Gotham
+AimbotText.Text = Aimbot
+AimbotText.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotText.TextScaled = true
+AimbotText.TextSize = 14.000
+AimbotText.TextWrapped = true
+
+AimbotButton.Name = AimbotButton
+AimbotButton.Parent = AimbotFrame
+AimbotButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AimbotButton.Position = UDim2.new(0.733067751, 0, 0.199206457, 0)
+AimbotButton.Size = UDim2.new(0.235059768, 0, 0.644390047, 0)
+AimbotButton.Modal = true
+AimbotButton.Font = Enum.Font.Gotham
+AimbotButton.Text = Off
+AimbotButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotButton.TextScaled = true
+AimbotButton.TextSize = 15.000
+AimbotButton.TextWrapped = true
+
+UICorner_17.Parent = AimbotButton
+
+AimbotSmoothnessFrame.Name = AimbotSmoothnessFrame
+AimbotSmoothnessFrame.Parent = AdditionalSettings
+AimbotSmoothnessFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimbotSmoothnessFrame.Position = UDim2.new(0.0990699455, 0, 0.192383766, 0)
+AimbotSmoothnessFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+UICorner_18.Parent = AimbotSmoothnessFrame
+
+AimbotSmoothnessText.Name = AimbotSmoothnessText
+AimbotSmoothnessText.Parent = AimbotSmoothnessFrame
+AimbotSmoothnessText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotSmoothnessText.BackgroundTransparency = 1.000
+AimbotSmoothnessText.Position = UDim2.new(0, 0, 0.171428576, 0)
+AimbotSmoothnessText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+AimbotSmoothnessText.Font = Enum.Font.Gotham
+AimbotSmoothnessText.Text = Aimbot smoothness [BETA]
+AimbotSmoothnessText.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotSmoothnessText.TextScaled = true
+AimbotSmoothnessText.TextSize = 14.000
+AimbotSmoothnessText.TextWrapped = true
+
+AimbotSmoothnessValue.Name = AimbotSmoothnessValue
+AimbotSmoothnessValue.Parent = AimbotSmoothnessFrame
+AimbotSmoothnessValue.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AimbotSmoothnessValue.Position = UDim2.new(0.733067751, 0, 0.199206457, 0)
+AimbotSmoothnessValue.Size = UDim2.new(0.235059768, 0, 0.644390047, 0)
+AimbotSmoothnessValue.ClearTextOnFocus = false
+AimbotSmoothnessValue.Font = Enum.Font.Gotham
+AimbotSmoothnessValue.Text = 0
+AimbotSmoothnessValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotSmoothnessValue.TextScaled = true
+AimbotSmoothnessValue.TextSize = 15.000
+AimbotSmoothnessValue.TextWrapped = true
+
+UICorner_19.Parent = AimbotSmoothnessValue
+
+AimbotRangeFrame.Name = AimbotRangeFrame
+AimbotRangeFrame.Parent = AdditionalSettings
+AimbotRangeFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimbotRangeFrame.Position = UDim2.new(0.0990699455, 0, 0.321139455, 0)
+AimbotRangeFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+UICorner_20.Parent = AimbotRangeFrame
+
+AimbotRangeText.Name = AimbotRangeText
+AimbotRangeText.Parent = AimbotRangeFrame
+AimbotRangeText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotRangeText.BackgroundTransparency = 1.000
+AimbotRangeText.Position = UDim2.new(0, 0, 0.171428576, 0)
+AimbotRangeText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+AimbotRangeText.Font = Enum.Font.Gotham
+AimbotRangeText.Text = Aimbot range
+AimbotRangeText.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotRangeText.TextScaled = true
+AimbotRangeText.TextSize = 14.000
+AimbotRangeText.TextWrapped = true
+
+AimbotRangeValue.Name = AimbotRangeValue
+AimbotRangeValue.Parent = AimbotRangeFrame
+AimbotRangeValue.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AimbotRangeValue.Position = UDim2.new(0.733067751, 0, 0.199206457, 0)
+AimbotRangeValue.Size = UDim2.new(0.235059768, 0, 0.644390047, 0)
+AimbotRangeValue.ClearTextOnFocus = false
+AimbotRangeValue.Font = Enum.Font.Gotham
+AimbotRangeValue.Text = 5000
+AimbotRangeValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotRangeValue.TextScaled = true
+AimbotRangeValue.TextSize = 15.000
+AimbotRangeValue.TextWrapped = true
+
+UICorner_21.Parent = AimbotRangeValue
+
+AimbotBulletDropFrame.Name = AimbotBulletDropFrame
+AimbotBulletDropFrame.Parent = AdditionalSettings
+AimbotBulletDropFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimbotBulletDropFrame.Position = UDim2.new(0.0978918597, 0, 0.45006299, 0)
+AimbotBulletDropFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+UICorner_22.Parent = AimbotBulletDropFrame
+
+AimbotBulletDropText.Name = AimbotBulletDropText
+AimbotBulletDropText.Parent = AimbotBulletDropFrame
+AimbotBulletDropText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotBulletDropText.BackgroundTransparency = 1.000
+AimbotBulletDropText.Position = UDim2.new(0, 0, 0.171428576, 0)
+AimbotBulletDropText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+AimbotBulletDropText.Font = Enum.Font.Gotham
+AimbotBulletDropText.Text = Aim offset (bullet drop)
+AimbotBulletDropText.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotBulletDropText.TextScaled = true
+AimbotBulletDropText.TextSize = 14.000
+AimbotBulletDropText.TextWrapped = true
+
+AimbotBulletDropValue.Name = AimbotBulletDropValue
+AimbotBulletDropValue.Parent = AimbotBulletDropFrame
+AimbotBulletDropValue.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AimbotBulletDropValue.Position = UDim2.new(0.733067751, 0, 0.199206457, 0)
+AimbotBulletDropValue.Size = UDim2.new(0.235059768, 0, 0.644390047, 0)
+AimbotBulletDropValue.ClearTextOnFocus = false
+AimbotBulletDropValue.Font = Enum.Font.Gotham
+AimbotBulletDropValue.Text = 0
+AimbotBulletDropValue.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotBulletDropValue.TextScaled = true
+AimbotBulletDropValue.TextSize = 15.000
+AimbotBulletDropValue.TextWrapped = true
+
+UICorner_23.Parent = AimbotBulletDropValue
+
+ESPFrame.Name = ESPFrame
+ESPFrame.Parent = AdditionalSettings
+ESPFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ESPFrame.Position = UDim2.new(0.418704182, 0, 0.0391280092, 0)
+ESPFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+ESPText.Name = ESPText
+ESPText.Parent = ESPFrame
+ESPText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPText.BackgroundTransparency = 1.000
+ESPText.Position = UDim2.new(0, 0, 0.171428576, 0)
+ESPText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+ESPText.Font = Enum.Font.Gotham
+ESPText.Text = ESP
+ESPText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPText.TextScaled = true
+ESPText.TextSize = 14.000
+ESPText.TextWrapped = true
+
+ESPButton.Name = ESPButton
+ESPButton.Parent = ESPFrame
+ESPButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ESPButton.Position = UDim2.new(0.733067751, 0, 0.199206457, 0)
+ESPButton.Size = UDim2.new(0.235059768, 0, 0.644390047, 0)
+ESPButton.Modal = true
+ESPButton.Font = Enum.Font.Gotham
+ESPButton.Text = In Maintenance
+ESPButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPButton.TextScaled = true
+ESPButton.TextSize = 15.000
+ESPButton.TextWrapped = true
+
+UICorner_24.Parent = ESPButton
+
+UICorner_25.Parent = ESPFrame
+
+AimPartFrame.Name = AimPartFrame
+AimPartFrame.Parent = AdditionalSettings
+AimPartFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimPartFrame.Position = UDim2.new(0.0978918597, 0, 0.581032932, 0)
+AimPartFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+UICorner_26.Parent = AimPartFrame
+
+AimbotAimPartText.Name = AimbotAimPartText
+AimbotAimPartText.Parent = AimPartFrame
+AimbotAimPartText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AimbotAimPartText.BackgroundTransparency = 1.000
+AimbotAimPartText.Position = UDim2.new(0, 0, 0.171428576, 0)
+AimbotAimPartText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+AimbotAimPartText.Font = Enum.Font.Gotham
+AimbotAimPartText.Text = Aim part
+AimbotAimPartText.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimbotAimPartText.TextScaled = true
+AimbotAimPartText.TextSize = 14.000
+AimbotAimPartText.TextWrapped = true
+
+AimbotAimPartChoices.Name = AimbotAimPartChoices
+AimbotAimPartChoices.Parent = AimPartFrame
+AimbotAimPartChoices.Active = true
+AimbotAimPartChoices.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimbotAimPartChoices.Position = UDim2.new(0.733067691, 0, -6.23980611e-07, 0)
+AimbotAimPartChoices.Selectable = true
+AimbotAimPartChoices.Size = UDim2.new(0.266932338, 0, 3.76011562, 0)
+
+UICorner_27.Parent = AimbotAimPartChoices
+
+AimPartChoice.Name = AimPartChoice
+AimPartChoice.Parent = AimPartFrame
+AimPartChoice.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AimPartChoice.Position = UDim2.new(0.762088001, 0, 0.197659582, 0)
+AimPartChoice.Size = UDim2.new(0.210023567, 0, 0.812454641, 0)
+AimPartChoice.Modal = true
+AimPartChoice.Font = Enum.Font.Gotham
+AimPartChoice.Text = Head
+AimPartChoice.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimPartChoice.TextScaled = true
+AimPartChoice.TextSize = 15.000
+AimPartChoice.TextWrapped = true
+
+UICorner_28.Parent = AimPartChoice
+
+AimPartHead.Name = AimPartHead
+AimPartHead.Parent = AimPartFrame
+AimPartHead.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AimPartHead.Position = UDim2.new(0.762088001, 0, 1.34421647, 0)
+AimPartHead.Size = UDim2.new(0.206039563, 0, 1.06012869, 0)
+AimPartHead.Modal = true
+AimPartHead.Font = Enum.Font.Gotham
+AimPartHead.Text = Head
+AimPartHead.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimPartHead.TextScaled = true
+AimPartHead.TextSize = 15.000
+AimPartHead.TextWrapped = true
+
+UICorner_29.Parent = AimPartHead
+
+AimPartHead_2.Name = AimPartHead
+AimPartHead_2.Parent = AimPartFrame
+AimPartHead_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+AimPartHead_2.Position = UDim2.new(0.762088001, 0, 2.69369197, 0)
+AimPartHead_2.Size = UDim2.new(0.210023642, 0, 1.06012869, 0)
+AimPartHead_2.Modal = true
+AimPartHead_2.Font = Enum.Font.Gotham
+AimPartHead_2.Text = HumanoidRootPart
+AimPartHead_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+AimPartHead_2.TextScaled = true
+AimPartHead_2.TextSize = 15.000
+AimPartHead_2.TextWrapped = true
+
+UICorner_30.Parent = AimPartHead_2
+
+ESPTracersFrame.Name = ESPTracersFrame
+ESPTracersFrame.Parent = AdditionalSettings
+ESPTracersFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ESPTracersFrame.Position = UDim2.new(0.418704182, 0, 0.19056201, 0)
+ESPTracersFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+ESPTracersText.Name = ESPTracersText
+ESPTracersText.Parent = ESPTracersFrame
+ESPTracersText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPTracersText.BackgroundTransparency = 1.000
+ESPTracersText.Position = UDim2.new(0, 0, 0.171428576, 0)
+ESPTracersText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+ESPTracersText.Font = Enum.Font.Gotham
+ESPTracersText.Text = ESP Tracers
+ESPTracersText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPTracersText.TextScaled = true
+ESPTracersText.TextSize = 14.000
+ESPTracersText.TextWrapped = true
+
+ESPTracersButton.Name = ESPTracersButton
+ESPTracersButton.Parent = ESPTracersFrame
+ESPTracersButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ESPTracersButton.Position = UDim2.new(0.733067751, 0, 0.199206457, 0)
+ESPTracersButton.Size = UDim2.new(0.235059768, 0, 0.644390047, 0)
+ESPTracersButton.Modal = true
+ESPTracersButton.Font = Enum.Font.Gotham
+ESPTracersButton.Text = Off
+ESPTracersButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPTracersButton.TextScaled = true
+ESPTracersButton.TextSize = 15.000
+ESPTracersButton.TextWrapped = true
+
+UICorner_31.Parent = ESPTracersButton
+
+UICorner_32.Parent = ESPTracersFrame
+
+ESPChamsFrame.Name = ESPChamsFrame
+ESPChamsFrame.Parent = AdditionalSettings
+ESPChamsFrame.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+ESPChamsFrame.Position = UDim2.new(0.418704182, 0, 0.321778893, 0)
+ESPChamsFrame.Size = UDim2.new(0.295699656, 0, 0.100085385, 0)
+
+ESPChamsText.Name = ESPChamsText
+ESPChamsText.Parent = ESPChamsFrame
+ESPChamsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ESPChamsText.BackgroundTransparency = 1.000
+ESPChamsText.Position = UDim2.new(0, 0, 0.171428576, 0)
+ESPChamsText.Size = UDim2.new(0.693227112, 0, 0.638888896, 0)
+ESPChamsText.Font = Enum.Font.Gotham
+ESPChamsText.Text = ESP Chams
+ESPChamsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPChamsText.TextScaled = true
+ESPChamsText.TextSize = 14.000
+ESPChamsText.TextWrapped = true
+
+ESPChamsButton.Name = ESPChamsButton
+ESPChamsButton.Parent = ESPChamsFrame
+ESPChamsButton.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+ESPChamsButton.Position = UDim2.new(0.733067751, 0, 0.199206457, 0)
+ESPChamsButton.Size = UDim2.new(0.235059768, 0, 0.644390047, 0)
+ESPChamsButton.Modal = true
+ESPChamsButton.Font = Enum.Font.Gotham
+ESPChamsButton.Text = Off
+ESPChamsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ESPChamsButton.TextScaled = true
+ESPChamsButton.TextSize = 15.000
+ESPChamsButton.TextWrapped = true
+
+UICorner_33.Parent = ESPChamsButton
+
+UICorner_34.Parent = ESPChamsFrame
+
+PurchaseFrame.Name = PurchaseFrame
+PurchaseFrame.Parent = SilentwareGui
+PurchaseFrame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+PurchaseFrame.Position = UDim2.new(0.0249823127, 0, 0.118032664, 0)
+PurchaseFrame.Size = UDim2.new(0.94841814, 0, 0.762880445, 0)
+PurchaseFrame.Visible = false
+PurchaseFrame.ZIndex = 0
+
+UICorner_35.Parent = PurchaseFrame
+
+TextButton.Parent = PurchaseFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextButton.Position = UDim2.new(0.365141988, 0, 0.40825808, 0)
+TextButton.Size = UDim2.new(0.270564109, 0, 0.119373657, 0)
+TextButton.Font = Enum.Font.Gotham
+TextButton.Text = PURCHASE
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+UICorner_36.Parent = TextButton
+
+UITextSizeConstraint.Parent = TextButton
+UITextSizeConstraint.MaxTextSize = 30
+UITextSizeConstraint.MinTextSize = 30
+
+TextLabel_3.Parent = PurchaseFrame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.218553618, 0, 0.131311059, 0)
+TextLabel_3.Size = UDim2.new(0.562030196, 0, 0.238747314, 0)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = To buy silenthub, press the purchase button down below to have access to all the features.
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+TextBox.Parent = PurchaseFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Position = UDim2.new(0.220143035, 0, 0.711467028, 0)
+TextBox.Size = UDim2.new(0.562030137, 0, 0.069236733, 0)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.Gotham
+TextBox.Text = httpswww.roblox.comgame-pass97989433Silenthub-Access
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+TextLabel_4.Parent = PurchaseFrame
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.220142975, 0, 0.555594563, 0)
+TextLabel_4.Size = UDim2.new(0.562030196, 0, 0.126536071, 0)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = Or simply go here
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextScaled = true
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+ThemeFrame.Name = ThemeFrame
+ThemeFrame.Parent = SilentwareGui
+ThemeFrame.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+ThemeFrame.Position = UDim2.new(0.0249823127, 0, 0.118032664, 0)
+ThemeFrame.Size = UDim2.new(0.94841814, 0, 0.762880445, 0)
+ThemeFrame.Visible = false
+ThemeFrame.ZIndex = 0
+
+UICorner_37.Parent = ThemeFrame
+
+Frame_2.Parent = ThemeFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Frame_2.Position = UDim2.new(0.105029523, 0, 0.0428023301, 0)
+Frame_2.Size = UDim2.new(0, 281, 0, 110)
+
+UICorner_38.Parent = Frame_2
+
+TextLabel_5.Parent = Frame_2
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.142348751, 0, 0, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 35)
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = Light Theme
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextScaled = true
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+TextLabel_6.Parent = Frame_2
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0711743757, 0, 0.345454544, 0)
+TextLabel_6.Size = UDim2.new(0, 240, 0, 34)
+TextLabel_6.Font = Enum.Font.Gotham
+TextLabel_6.Text = Description A more vibrant theme so you can see your settings more easily.
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+TextButton_2.Parent = Frame_2
+TextButton_2.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+TextButton_2.Position = UDim2.new(0.142348751, 0, 0.75292927, 0)
+TextButton_2.Size = UDim2.new(0, 200, 0, 18)
+TextButton_2.Font = Enum.Font.Gotham
+TextButton_2.Text = APPLY
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
+
+UICorner_39.Parent = TextButton_2
+
+-- Scripts
+
+local function VSNLQGI_fake_script() -- UserImage.LocalScript 
+	local script = Instance.new('LocalScript', UserImage)
+
+	local Players = gameGetService(Players)
+	
+	local player = Players.LocalPlayer
+	
+	-- Fetch the thumbnail
+	local userId = player.UserId
+	local thumbType = Enum.ThumbnailType.HeadShot
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	local content, isReady = PlayersGetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	-- Set the ImageLabel's content to the user thumbnail
+	local imageLabel = script.Parent
+	imageLabel.Image = content
+end
+coroutine.wrap(VSNLQGI_fake_script)()
+local function MIDH_fake_script() -- UserName.LocalScript 
+	local script = Instance.new('LocalScript', UserName)
+
+	
+end
+coroutine.wrap(MIDH_fake_script)()
+local function PXZJBJO_fake_script() -- UserName.LocalScript 
+	local script = Instance.new('LocalScript', UserName)
+
+	script.Parent.Text = Hello,  .. game.Players.LocalPlayer.Name
+end
+coroutine.wrap(PXZJBJO_fake_script)()
+local function JYFL_fake_script() -- FeelGoodPhrase.LocalScript 
+	local script = Instance.new('LocalScript', FeelGoodPhrase)
+
+	
+end
+coroutine.wrap(JYFL_fake_script)()
+local function DDYLCSJ_fake_script() -- FeelGoodPhrase.LocalScript 
+	local script = Instance.new('LocalScript', FeelGoodPhrase)
+
+	script.Parent.Text = Are you enjoying  .. gameGetService(MarketplaceService)GetProductInfo(game.PlaceId).Name .. 
+end
+coroutine.wrap(DDYLCSJ_fake_script)()
+local function FPIPC_fake_script() -- keyboard.LocalScript 
+	local script = Instance.new('LocalScript', keyboard)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Parent.PurchaseFrame.Visible = false
+		script.Parent.Parent.Parent.AdditionalSettings.Visible = false
+		script.Parent.Parent.Parent.ThemeFrame.Visible = false
+		script.Parent.Parent.Parent.Executor.Visible = true
+	end)
+end
+coroutine.wrap(FPIPC_fake_script)()
+local function EEHVDTC_fake_script() -- settings.LocalScript 
+	local script = Instance.new('LocalScript', settings)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Executor.Visible = false
+		script.Parent.Parent.Parent.PurchaseFrame.Visible = false
+		script.Parent.Parent.Parent.AdditionalSettings.Visible = false
+		script.Parent.Parent.Parent.ThemeFrame.Visible = false
+		script.Parent.Parent.Parent.Settings.Visible = true
+	end)
+end
+coroutine.wrap(EEHVDTC_fake_script)()
+local function XJCX_fake_script() -- home.LocalScript 
+	local script = Instance.new('LocalScript', home)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Parent.Executor.Visible = false
+		script.Parent.Parent.Parent.PurchaseFrame.Visible = false
+		script.Parent.Parent.Parent.AdditionalSettings.Visible = false
+		script.Parent.Parent.Parent.ThemeFrame.Visible = false
+		script.Parent.Parent.Parent.Main.Visible = true
+	end)
+end
+coroutine.wrap(XJCX_fake_script)()
+local function JUPCKL_fake_script() -- shopping_basket.LocalScript 
+	local script = Instance.new('LocalScript', shopping_basket)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Parent.Executor.Visible = false
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.AdditionalSettings.Visible = false
+		script.Parent.Parent.Parent.ThemeFrame.Visible = false
+		script.Parent.Parent.Parent.PurchaseFrame.Visible = true
+	end)
+end
+coroutine.wrap(JUPCKL_fake_script)()
+local function MIPGN_fake_script() -- add_circle_outline.LocalScript 
+	local script = Instance.new('LocalScript', add_circle_outline)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Parent.PurchaseFrame.Visible = false
+		script.Parent.Parent.Parent.Executor.Visible = false
+		script.Parent.Parent.Parent.ThemeFrame.Visible = false
+		script.Parent.Parent.Parent.AdditionalSettings.Visible = true
+	end)
+end
+coroutine.wrap(MIPGN_fake_script)()
+local function YLURSF_fake_script() -- compare.LocalScript 
+	local script = Instance.new('LocalScript', compare)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.Parent.Settings.Visible = false
+		script.Parent.Parent.Parent.Executor.Visible = false
+		script.Parent.Parent.Parent.Main.Visible = false
+		script.Parent.Parent.Parent.AdditionalSettings.Visible = false
+		script.Parent.Parent.Parent.PurchaseFrame.Visible = false
+		script.Parent.Parent.Parent.ThemeFrame.Visible = true
+	end)
+end
+coroutine.wrap(YLURSF_fake_script)()
+local function CKGHHWC_fake_script() -- ExecuteButton.LocalScript 
+	local script = Instance.new('LocalScript', ExecuteButton)
+
+	local lobp = {
+		Q1ddz;
+		s1l3nt41m;
+		cheatersilentt;
+		Q2ddz;
+		BLSSXTER;
+		CoppedUsers;
+		IHackInArsenal1x3;
+		FRUlTSNACKSDAB;
+		hoodgoblins;
+		Dr4k30s;
+		siIentware;
+		QuietYouSimian;
+		SONICFAN29431;
+		silentedpistols
+	}
+	
+	local plr = game.Players.LocalPlayer
+	
+	script.Parent.MouseButton1ClickConnect(function()
+		local whitelistedPlayers
+		for _, players in pairs(lobp) do
+			if plr.Name == players then
+				whitelistedPlayers = players
+			end
+		end
+		if not gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) and plr.Name ~= whitelistedPlayers then
+			game.StarterGuiSetCore(SendNotification, {
+				Title = Silenthub;
+				Text = In order to use Silenthub, we require you to purchase our gamepass.;
+				Icon = rbxassetid11353382226;
+				Duration = 5;
+			})
+			gameGetService(MarketplaceService)PromptPurchase(plr, 97989433)
+		elseif gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) then
+			script.Parent.Parent.Parent.Executor.ExecuteEventFireServer(script.Parent.Parent.CodeBar.Text)
+		end
+		if plr.Name == whitelistedPlayers then
+			script.Parent.Parent.Parent.Executor.ExecuteEventFireServer(script.Parent.Parent.CodeBar.Text)
+		end
+	end)
+end
+coroutine.wrap(CKGHHWC_fake_script)()
+local function QRZUPG_fake_script() -- ExecuteButton.UndetectedScriptScript 
+	local script = Instance.new('LocalScript', ExecuteButton)
+
+	while wait(0) do
+		script.Parent.Name = math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. _hiddenKey0 .. math.random(0, 5)
+	end
+end
+coroutine.wrap(QRZUPG_fake_script)()
+local function KJFTP_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	
+end
+coroutine.wrap(KJFTP_fake_script)()
+local function RQRT_fake_script() -- AimbotButton.LocalScript 
+	local script = Instance.new('LocalScript', AimbotButton)
+
+	local canAimbot = false
+	local isAimbotting = false
+	local abk
+	local HumOfplrToAimlock
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character or plr.CharacterAddedWait()
+	local uis = gameGetService(UserInputService)
+	local predicting = true
+	local lobp = {
+		Q1ddz;
+		s1l3nt41m;
+		cheatersilentt;
+		Q2ddz;
+		BLSSXTER;
+		CoppedUsers;
+		IHackInArsenal1x3;
+		FRUlTSNACKSDAB;
+		hoodgoblins;
+		Dr4k30s;
+		siIentware;
+		QuietYouSimian;
+		SONICFAN29431;
+		silentedpistols;
+		silenthubs;
+		UDIGGBRO;
+		SmithsonianX;
+		ManDown_Sniper;
+		KnightCapper;
+		WolfAmongYouSheep;
+		SilenceOfTheZombies;
+		7kStealth;
+		GeForceRTX3O7O
+	}
+	local whitelistedPlayers
+	
+	workspace.Camera.CameraType = Enum.CameraType.Scriptable
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if script.Parent.Parent.Parent.Parent.Settings.AimbotKeyFrame.InputKeyIsFocused() ~= true then
+			abk = script.Parent.Parent.Parent.Parent.Settings.AimbotKeyFrame.InputKey.Text
+		end
+	end)
+	
+	local function GetNearestHumanoid(targetPosition)
+		local distance = tonumber(script.Parent.Parent.Parent.AimbotRangeFrame.AimbotRangeValue.Text)
+		local humanoid
+	
+		for _, player in pairs(workspaceGetDescendants()) do
+			if player then
+				if playerIsA(Model) then
+					if playerFindFirstChildOfClass(Humanoid) then
+						local playerDistance = (targetPosition - player.PrimaryPart.Position).Magnitude
+						if playerDistance  distance then
+							distance = playerDistance
+							humanoid = playerFindFirstChildOfClass(Humanoid)
+						end
+					end
+				end
+			end
+		end
+		return humanoid
+	end
+	
+	gameGetService(UserInputService).InputBeganConnect(function(key)
+		if key.KeyCode == Enum.KeyCode[abk] then
+			if not isAimbotting then
+				if script.Parent.Text ~= Off then
+					isAimbotting = true
+					HumOfplrToAimlock = GetNearestHumanoid(gameGetService(Players).LocalPlayerGetMouse().Hit.Position)
+					game.StarterGuiSetCore(SendNotification, {
+						Title = Silenthub;
+						Text = Aimbot has been enabled.;
+						Icon = rbxassetid11353382226;
+						Duration = 5
+					})
+				end
+			else
+				if script.Parent.Text ~= Off then
+					isAimbotting = false
+					HumOfplrToAimlock = nil
+					game.StarterGuiSetCore(SendNotification, {
+						Title = Silenthub;
+						Text = Aimbot has been disabled.;
+						Icon = rbxassetid11353382226;
+						Duration = 5
+					})
+					uis.MouseDeltaSensitivity = 1
+				end
+			end
+		end
+	end)
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if script.Parent.Text == On then
+			canAimbot = true
+		else
+			canAimbot = false
+		end
+	end)
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		HumOfplrToAimlock = GetNearestHumanoid(gameGetService(Players).LocalPlayerGetMouse().Hit.Position)
+	end)
+	
+	local function predictPosition(part, timeInterval)
+		return part.Position + part.Velocity  timeInterval
+	end
+	
+	script.Parent.MouseButton1ClickConnect(function()
+		for _, players in pairs(lobp) do
+			if plr.Name == players then
+				whitelistedPlayers = players
+				if script.Parent.Text == Off then
+					script.Parent.Text = On
+					canAimbot = true
+				else
+					script.Parent.Text = Off
+					canAimbot = false
+				end
+			end
+		end
+		if not gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) and plr.Name ~= whitelistedPlayers then
+			game.StarterGuiSetCore(SendNotification, {
+				Title = Silenthub;
+				Text = In order to use Silenthub, we require you to purchase our gamepass.;
+				Icon = rbxassetid11353382226;
+				Duration = 5;
+			})
+			gameGetService(MarketplaceService)PromptPurchase(plr, 97989433)
+		elseif gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) then
+			if script.Parent.Text == Off then
+				script.Parent.Text = On
+			else
+				script.Parent.Text = Off
+			end
+		end
+	end)
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if not gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) and plr.Name ~= whitelistedPlayers then
+			script.Parent.Text = Off
+		end
+	end)
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if script.Parent.Text ~= Off then
+			if isAimbotting then
+				local hum = HumOfplrToAimlock
+				if hum then
+					if hum.Parent.Name ~= game.Players.LocalPlayer.Name then
+						if HumOfplrToAimlock then
+							if hum.Health  0 then
+								uis.MouseDeltaSensitivity = 0
+								gameGetService(TweenService)Create(workspace.CurrentCamera, TweenInfo.new(tonumber(script.Parent.Parent.Parent.AimbotSmoothnessFrame.AimbotSmoothnessValue.Text)), {CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position, hum.ParentWaitForChild(script.Parent.Parent.Parent.AimPartFrame.AimPartChoice.Text).Position) + Vector3.new(0, tonumber(script.Parent.Parent.Parent.AimbotBulletDropFrame.AimbotBulletDropValue.Text), 0)})Play()
+							else
+								HumOfplrToAimlock = nil
+								uis.MouseDeltaSensitivity = 1
+							end
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(RQRT_fake_script)()
+local function RTWN_fake_script() -- AimbotButton.UndetectedScriptScript 
+	local script = Instance.new('LocalScript', AimbotButton)
+
+	while wait(0) do
+		script.Parent.Name = math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. _hiddenKey0 .. math.random(0, 5)
+	end
+end
+coroutine.wrap(RTWN_fake_script)()
+local function QSQNM_fake_script() -- AimbotSmoothnessValue.LocalScript 
+	local script = Instance.new('LocalScript', AimbotSmoothnessValue)
+
+	gameGetService(RunService).RenderSteppedConnect(function()
+		script.Parent.Text = tonumber(math.clamp(tonumber(script.Parent.Text), 0, 3))
+	end)
+end
+coroutine.wrap(QSQNM_fake_script)()
+local function SWXESG_fake_script() -- AimbotRangeValue.LocalScript 
+	local script = Instance.new('LocalScript', AimbotRangeValue)
+
+	gameGetService(RunService).RenderSteppedConnect(function()
+		script.Parent.Text = tonumber(math.clamp(tonumber(script.Parent.Text), 0, 100000))
+	end)
+end
+coroutine.wrap(SWXESG_fake_script)()
+local function JIJGYYJ_fake_script() -- AimbotBulletDropValue.LocalScript 
+	local script = Instance.new('LocalScript', AimbotBulletDropValue)
+
+	gameGetService(RunService).RenderSteppedConnect(function()
+		script.Parent.Text = tonumber(math.clamp(tonumber(script.Parent.Text), -5, 5))
+	end)
+end
+coroutine.wrap(JIJGYYJ_fake_script)()
+local function JEAZQY_fake_script() -- ESPButton.LocalScript 
+	local script = Instance.new('LocalScript', ESPButton)
+
+	local canEsp = false
+	local isUsingEsp = false
+	local abk
+	local plr = game.Players.LocalPlayer
+	local char = plr.Character or plr.CharacterAddedWait()
+	local uis = gameGetService(UserInputService)
+	local predicting = true
+	local lobp = {
+		Q1ddz;
+		s1l3nt41m;
+		cheatersilentt;
+		Q2ddz;
+		BLSSXTER;
+		CoppedUsers;
+		IHackInArsenal1x3;
+		FRUlTSNACKSDAB;
+		hoodgoblins;
+		Dr4k30s;
+		siIentware;
+		QuietYouSimian;
+		SONICFAN29431;
+		silentedpistols;
+		silenthubs;
+		UDIGGBRO;
+		SmithsonianX;
+		ManDown_Sniper;
+		KnightCapper;
+		WolfAmongYouSheep;
+		SilenceOfTheZombies;
+		7kStealth;
+		GeForceRTX3O7O
+	}
+	local lop = {}
+	local whitelistedPlayers
+	local playersInEsp
+	local espPlayerChams
+	local espChamButton = script.Parent.Parent.ParentFindFirstChild(ESPChamsFrame)FindFirstChild(ESPChamsButton)
+	local espTracerButton = script.Parent.Parent.ParentFindFirstChild(ESPTracersFrame)FindFirstChild(ESPTracersButton)
+	
+	for _, players in pairs(workspaceGetChildren()) do
+		if playersIsA(Model) then
+			if playersFindFirstChildOfClass(Humanoid) then
+				table.insert(lop, players)
+			end
+		end
+	end
+	
+	local function Clear()
+		table.clear(lop)
+	end
+	
+	
+	local function Generate()
+		for _, players in pairs(workspaceGetChildren()) do
+			if playersIsA(Model) then
+				if playersFindFirstChildOfClass(Humanoid) then
+					table.insert(lop, players)
+				end
+			end
+		end
+	end
+	
+	game.Players.PlayerAddedConnect(function(plr)
+		Clear()
+		Generate()
+	end)
+	
+	game.Players.PlayerRemovingConnect(function(plr)
+		Clear()
+		Generate()
+	end)
+	
+	for _, players in pairs(workspaceGetChildren()) do
+		if playersIsA(Model) then
+			if playersFindFirstChildOfClass(Humanoid) then
+				playersFindFirstChildOfClass(Humanoid).DiedConnect(function()
+					wait(game.Players.RespawnTime)
+					table.insert(lop, players)
+				end)
+			end
+		end
+	end
+	
+	
+	
+	workspace.Camera.CameraType = Enum.CameraType.Scriptable
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if script.Parent.Parent.Parent.Parent.Settings.ESPKeyFrame.InputKeyIsFocused() ~= true then
+			abk = script.Parent.Parent.Parent.ParentFindFirstChild(Settings)FindFirstChild(ESPKeyFrame)FindFirstChild(InputKey).Text
+		end
+	end)
+	
+	gameGetService(UserInputService).InputBeganConnect(function(key)
+		if key.KeyCode == Enum.KeyCode[abk] then
+			if not isUsingEsp then
+				if script.Parent.Text ~= Off then
+					isUsingEsp = true
+					game.StarterGuiSetCore(SendNotification, {
+						Title = Silenthub;
+						Text = ESP has been enabled.;
+						Icon = rbxassetid11353382226;
+						Duration = 5
+					})
+					for _, Player in pairs(lop) do
+						if isUsingEsp then
+							if PlayerFindFirstChildOfClass(Humanoid) then
+								if PlayerFindFirstChildOfClass(Humanoid).Health  0 then
+									if not PlayerFindFirstChild(SilentHubEspTracers_SecretKey) then
+										local pfattch0 = Instance.new(Part)
+										pfattch0.Parent = workspace
+										pfattch0.Name = ScriptUserTorsoPart
+										pfattch0.Anchored = true
+										pfattch0.CanCollide = false
+										pfattch0.Transparency = 1
+										coroutine.wrap(function()
+											gameGetService(RunService).RenderSteppedConnect(function()
+												if isUsingEsp then
+													if charWaitForChild(HumanoidRootPart) then
+														pfattch0.CFrame = charWaitForChild(HumanoidRootPart).CFrame
+													else
+														warn(No HRP!)
+													end
+												end
+											end)
+										end)()
+										local pfattch1 = Instance.new(Part)
+										pfattch1.Parent = workspace
+										pfattch1.Name = VictimTorsoPart
+										pfattch1.Anchored = true
+										pfattch1.CanCollide = false
+										pfattch1.Transparency = 1
+										coroutine.wrap(function()
+											gameGetService(RunService).RenderSteppedConnect(function()
+												if isUsingEsp then
+													if PlayerFindFirstChild(HumanoidRootPart) then
+														pfattch1.CFrame = PlayerFindFirstChild(HumanoidRootPart).CFrame
+													else
+														return
+													end
+												end
+											end)
+										end)()
+										local attch0 = Instance.new(Attachment)
+										attch0.Parent = pfattch0
+										local attch1 = Instance.new(Attachment)
+										attch1.Parent = pfattch1
+										local tracer = Instance.new(Beam)
+										tracer.Name = SilentHubEspTracers_SecretKey
+										tracer.Enabled = true
+										tracer.Color = ColorSequence.new(Color3.fromRGB(255, 0, 0))
+										tracer.Parent = Player
+										tracer.Attachment0 = attch0
+										tracer.Attachment1 = attch1
+										tracer.FaceCamera = true
+										tracer.Width0 = 0.075
+										tracer.Width1 = 0.075
+									end
+								end
+							end
+						end
+					end
+				end
+			end
+		else
+			if script.Parent.Text ~= Off then
+				isUsingEsp = false
+				game.StarterGuiSetCore(SendNotification, {
+					Title = Silenthub;
+					Text = ESP has been disabled.;
+					Icon = rbxassetid11353382226;
+					Duration = 5
+				})
+				uis.MouseDeltaSensitivity = 1
+				for _, Player in pairs(lop) do
+					if PlayerWaitForChild(SilentHubEspTracers_SecretKey) then
+						PlayerWaitForChild(SilentHubEspTracers_SecretKey)Destroy()
+					else
+						return
+					end
+				end
+			end
+		end
+	end)
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if script.Parent.Text == On then
+			canEsp = true
+		else
+			canEsp = false
+		end
+	end)
+	
+	script.Parent.MouseButton1ClickConnect(function()
+		for _, players in pairs(lobp) do
+			if plr.Name == players then
+				whitelistedPlayers = players
+				if script.Parent.Text == Off then
+					script.Parent.Text = On
+					canEsp = true
+				else
+					script.Parent.Text = Off
+					canEsp = false
+				end
+			end
+		end
+		if not gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) and plr.Name ~= whitelistedPlayers then
+			game.StarterGuiSetCore(SendNotification, {
+				Title = Silenthub;
+				Text = In order to use Silenthub, we require you to purchase our gamepass.;
+				Icon = rbxassetid11353382226;
+				Duration = 5;
+			})
+			gameGetService(MarketplaceService)PromptPurchase(plr, 97989433)
+		elseif gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) then
+			if script.Parent.Text == Off then
+				script.Parent.Text = On
+			else
+				script.Parent.Text = Off
+			end
+		end
+	end)
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if not gameGetService(MarketplaceService)UserOwnsGamePassAsync(plr.UserId, 97989433) and plr.Name ~= whitelistedPlayers then
+			script.Parent.Text = Off
+		end
+	end)
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if script.Parent.Text ~= Off then
+			for i, Player in pairs(lop) do
+				if isUsingEsp then
+					if not PlayerFindFirstChild(SilentHubEspHighlight_SecretKey) then
+						local espCham = Instance.new(Highlight)
+						espCham.Parent = Player
+						espCham.Name = SilentHubEspHighlight_SecretKey
+						espCham.FillColor = Color3.fromRGB(255, 255, 255)
+						if espChamButton.Text ~= Off then
+							espCham.FillTransparency = 0
+						else
+							espCham.FillTransparency = 1
+						end
+						espCham.OutlineColor = Color3.fromRGB(255, 255, 255)
+						espCham.OutlineTransparency = 0
+						espChamButtonGetPropertyChangedSignal(Text)Connect(function()
+							if espChamButton.Text ~= Off then
+								espCham.FillTransparency = 0
+							else
+								espCham.FillTransparency = 1
+							end
+						end)
+					end
+				else
+					if isUsingEsp ~= true then
+						if PlayerFindFirstChild(SilentHubEspHighlight_SecretKey) then
+							PlayerFindFirstChild(SilentHubEspHighlight_SecretKey)Destroy()
+						else
+							return
+						end
+					end
+				end
+			end
+		end
+	end)
+	
+	
+end
+coroutine.wrap(JEAZQY_fake_script)()
+local function IUCUIR_fake_script() -- ESPButton.UndetectedScriptScript 
+	local script = Instance.new('LocalScript', ESPButton)
+
+	while wait(0) do
+		script.Parent.Name = math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. _hiddenKey0 .. math.random(0, 5)
+	end
+end
+coroutine.wrap(IUCUIR_fake_script)()
+local function PJRS_fake_script() -- AimPartHead.LocalScript 
+	local script = Instance.new('LocalScript', AimPartHead)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.AimPartChoice.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(PJRS_fake_script)()
+local function UYNZ_fake_script() -- AimPartHead_2.LocalScript 
+	local script = Instance.new('LocalScript', AimPartHead_2)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		script.Parent.Parent.AimPartChoice.Text = script.Parent.Text
+	end)
+end
+coroutine.wrap(UYNZ_fake_script)()
+local function RBSGE_fake_script() -- ESPTracersButton.LocalScript 
+	local script = Instance.new('LocalScript', ESPTracersButton)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		if script.Parent.Text == Off then
+			script.Parent.Text = On
+		else
+			script.Parent.Text = Off
+		end
+	end)
+end
+coroutine.wrap(RBSGE_fake_script)()
+local function OFGUIAJ_fake_script() -- ESPTracersButton.UndetectedScriptScript 
+	local script = Instance.new('LocalScript', ESPTracersButton)
+
+	while wait(0) do
+		script.Parent.Name = math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. _hiddenKey0 .. math.random(0, 5)
+	end
+end
+coroutine.wrap(OFGUIAJ_fake_script)()
+local function VGQIFN_fake_script() -- ESPChamsButton.LocalScript 
+	local script = Instance.new('LocalScript', ESPChamsButton)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		if script.Parent.Text == Off then
+			script.Parent.Text = On
+		else
+			script.Parent.Text = Off
+		end
+	end)
+end
+coroutine.wrap(VGQIFN_fake_script)()
+local function UDTZNX_fake_script() -- ESPChamsButton.UndetectedScriptScript 
+	local script = Instance.new('LocalScript', ESPChamsButton)
+
+	while wait(0) do
+		script.Parent.Name = math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. _hiddenKey0 .. math.random(0, 5)
+	end
+end
+coroutine.wrap(UDTZNX_fake_script)()
+local function ESDAD_fake_script() -- SilentwareGui.UIVisibilityScript 
+	local script = Instance.new('LocalScript', SilentwareGui)
+
+	local oack
+	
+	gameGetService(RunService).RenderSteppedConnect(function()
+		if script.Parent.Settings.VisbilityKeyFrame.InputKey.Text ~=  then
+			oack = script.Parent.Settings.VisbilityKeyFrame.InputKey.Text
+		end
+	end)
+	
+	gameGetService(UserInputService).InputBeganConnect(function(key)
+		if not script.Parent.Settings.VisbilityKeyFrame.InputKeyIsFocused() then
+			if key.KeyCode == Enum.KeyCode[oack] then
+				if script.Parent.Enabled == true then
+					script.Parent.Enabled = false
+				else
+					script.Parent.Enabled = true
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(ESDAD_fake_script)()
+local function WBFULZ_fake_script() -- SilentwareGui.UndetectedScriptScript 
+	local script = Instance.new('LocalScript', SilentwareGui)
+
+	while wait(0) do
+		script.Parent.Name = math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. math.random(0, 1000) .. _hiddenKey0 .. math.random(0, 5)
+	end
+end
+coroutine.wrap(WBFULZ_fake_script)()
+local function HHBDS_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1ClickConnect(function()
+		gameGetService(MarketplaceService)PromptGamePassPurchase(game.Players.LocalPlayer, 97989433)
+	end)
+end
+coroutine.wrap(HHBDS_fake_script)()
+local function UXNTECQ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
+
+	local BackgroundColor = Color3.fromRGB(255, 255, 255)
+	local NavigationBarColor = Color3.fromRGB(215, 215, 215)
+	local TextColor = Color3.fromRGB(0, 0, 0)
+	local NavigationBarItemColor = TextColor
+	local FrameColor = Color3.fromRGB(215, 215, 215)
+	local TextBackgroundColor = Color3.fromRGB(197.5, 197.5, 197.5)
+	
+	local MainFrames
+	
+	script.Parent.MouseButton1ClickConnect(function()
+		for _, Frames in pairs(scriptFindFirstAncestorOfClass(ScreenGui)GetChildren()) do
+			if FramesIsA(Frame) then
+				if Frames ~= scriptFindFirstAncestorOfClass(ScreenGui).NagivationBar then
+					Frames.BackgroundColor3 = BackgroundColor
+					for i, FramesFrames in pairs(FramesGetDescendants()) do
+						if FramesFramesIsA(Frame) then
+							FramesFrames.BackgroundColor3 = FrameColor
+						else
+							if FramesFramesIsA(TextLabel) or FramesFramesIsA(TextBox) or FramesFramesIsA(TextButton) then
+								FramesFrames.TextColor3 = TextColor
+								FramesFrames.BackgroundColor3 = TextBackgroundColor
+							end
+						end
+					end
+				else
+					Frames.BackgroundColor3 = NavigationBarColor
+					for i, NavigationBarTerm in pairs(FramesGetChildren()) do
+						if NavigationBarTermIsA(ImageButton) then
+							NavigationBarTerm.ImageColor3 = NavigationBarItemColor
+						end
+					end
+				end
+			end
+		end
+	end)
+end
+coroutine.wrap(UXNTECQ_fake_script)()
